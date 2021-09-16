@@ -2,7 +2,7 @@
 
 Don't forget to add the following editor config for better fantomas formatting
 
-check [The templates on NuGet](https://www.nuget.org/packages/Fable.Lit.Templates)
+check [The templates on NuGet](https://www.nuget.org/packages/Fable.Sutil.Templates)
 
 `dotnet new --install Fable.Sutil.Templates`
 
