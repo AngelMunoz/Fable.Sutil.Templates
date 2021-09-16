@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <!-- General info -->
-    <Description>dotnet templates for Fable.Lit</Description>
+    <Description>dotnet templates for Sutil and Fable.Lit + Sutil</Description>
     <Copyright>Copyright 2020 Angel D. Munoz</Copyright>
     <Authors>Angel Munoz</Authors>
 

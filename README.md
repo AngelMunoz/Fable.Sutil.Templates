@@ -4,7 +4,7 @@ If you're using [Feliz.Engine.Lit](https://github.com/alfonsogarciacaro/Elmish.L
 
 check [The templates on NuGet](https://www.nuget.org/packages/Fable.Lit.Templates)
 
-`dotnet new --install Fable.Lit.Templates`
+`dotnet new --install Fable.Sutil.Templates`
 
 ```editorconfig
 [*.fs]
