@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "identity": "Sutil",
+    "shortName": "sutil-app",
+    "name": "Fable Sutil Template",
+    "author": "Angel D. Munoz",
+    "classifications": [
+        "Web",
+        "F#",
+        "fable",
+        "Sutil",
+        "DSL"
+    ],
+    "type": {
+        "language": "F#"
+    },
+    "tags": {
+        "type": "project",
+        "language": "F#"
+    },
+    "sourceName": "AppName",
+    "preferNameDirectory": true
+}

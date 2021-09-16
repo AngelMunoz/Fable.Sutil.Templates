@@ -1,0 +1,17 @@
+{
+  "name": "AppName",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "postinstall": "dotnet tool restore",
+    "format": "dotnet fantomas . --recurse",
+    "start": "dotnet fable src --watch --run snowpack dev",
+    "build": "dotnet fable snowpack build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "snowpack": "3.8.6"
+  }
+}
