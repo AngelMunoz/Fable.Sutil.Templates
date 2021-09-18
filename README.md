@@ -1,4 +1,4 @@
-# .NET templates for Fable.Lit
+# .NET templates for Sutil
 
 Don't forget to add the following editor config for better fantomas formatting
 
