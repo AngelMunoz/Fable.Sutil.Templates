@@ -1,16 +1,11 @@
 {
   "name": "AppName",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.0",
   "scripts": {
     "postinstall": "dotnet tool restore",
     "format": "dotnet fantomas . --recurse",
     "start": "dotnet fable src -e .fs.js -s -o ./public --watch --run vite",
     "build": "dotnet fable src -e .fs.js -s -o ./public --run vite build"
-  },
-  "dependencies": {
-    "lit-html": "2.0.0-rc.4",
-    "haunted": "4.8.2"
   },
   "devDependencies": {
     "vite": "^2.5.4"

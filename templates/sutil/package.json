@@ -5,13 +5,10 @@
   "scripts": {
     "postinstall": "dotnet tool restore",
     "format": "dotnet fantomas . --recurse",
-    "start": "dotnet fable src --watch --run snowpack dev",
-    "build": "dotnet fable snowpack build"
+    "start": "dotnet fable src -e .fs.js -s -o ./public --watch --run vite",
+    "build": "dotnet fable src -e .fs.js -s -o ./public --run vite build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "snowpack": "3.8.6"
+    "vite": "^2.5.4"
   }
 }
