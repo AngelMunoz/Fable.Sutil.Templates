@@ -18,7 +18,7 @@
   <ItemGroup>
     <PackageReference Include="Fable.Lit" Version="1.0.0-beta-004" />
     <PackageReference Include="Fable.Haunted" Version="1.0.0-beta-007" />
-    <PackageReference Include="Sutil" Version="1.0.0-beta-002" />
+    <PackageReference Include="Sutil" Version="1.0.0-beta-003" />
   </ItemGroup>
 
 </Project>
