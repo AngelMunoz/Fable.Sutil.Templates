@@ -1,25 +1,25 @@
 lockfileVersion: 5.3
 
 specifiers:
-  haunted: 4.8.2
-  lit-html: 2.0.0-rc.4
+  lit: 2.0.0
+  lit-html: 2.0.0
   vite: ^2.5.4
 
 dependencies:
-  haunted: 4.8.2
-  lit-html: 2.0.0-rc.4
+  lit: 2.0.0
+  lit-html: 2.0.0
 
 devDependencies:
   vite: 2.5.8
 
 packages:
 
-  /@lit/reactive-element/1.0.0-rc.3:
-    resolution: {integrity: sha512-Rs2px1keOQUNJUo5B+WExl5v244ZNCiN/iMVNO9evFdJjAdWCIupR/p14zRPkNHsciRBELLTcOZ379cI9O6PDg==}
+  /@lit/reactive-element/1.0.0:
+    resolution: {integrity: sha512-Kpgenb8UNFsKCsFhggiVvUkCbcFQSd6N8hffYEEGjz27/4rw3cTSsmP9t3q1EHOAsdum60Wo64HvuZDFpEwexA==}
     dev: false
 
-  /@types/trusted-types/1.0.6:
-    resolution: {integrity: sha512-230RC8sFeHoT6sSUlRO6a8cAnclO06eeiq1QDfiv2FGCLWFvvERWgwIQD4FWqD9A69BN7Lzee4OXwoMVnnsWDw==}
+  /@types/trusted-types/2.0.2:
+    resolution: {integrity: sha512-F5DIZ36YVLE+PN+Zwws4kJogq47hNgX3Nx6WyDJ3kcplxyke3XIzB8uK5n/Lpm1HBsbGzd6nmGehL8cPekP+Tg==}
     dev: false
 
   /colorette/1.3.0:
@@ -51,27 +51,31 @@ packages:
       function-bind: 1.1.1
     dev: true
 
-  /haunted/4.8.2:
-    resolution: {integrity: sha512-+auNzzp1AjzZblPrY3oV8PuTGAcK6I9ExBfFnhR+6HINVFeM7BR+jPDAKxa7NF22RBbu5McBhbp+t0zO0rqrqQ==}
-    dependencies:
-      '@lit/reactive-element': 1.0.0-rc.3
-      lit-html: 1.4.1
-    dev: false
-
   /is-core-module/2.6.0:
     resolution: {integrity: sha512-wShG8vs60jKfPWpF2KZRaAtvt3a20OAn7+IJ6hLPECpSABLcKtFKTTI4ZtH5QcBruBHlq+WsdHWyz0BCZW7svQ==}
     dependencies:
       has: 1.0.3
     dev: true
 
-  /lit-html/1.4.1:
-    resolution: {integrity: sha512-B9btcSgPYb1q4oSOb/PrOT6Z/H+r6xuNzfH4lFli/AWhYwdtrgQkQWBbIc6mdnf6E2IL3gDXdkkqNktpU0OZQA==}
+  /lit-element/3.0.0:
+    resolution: {integrity: sha512-oPqRhhBBhs+AlI62QLwtWQNU/bNK/h2L1jI3IDroqZubo6XVAkyNy2dW3CRfjij8mrNlY7wULOfyyKKOnfEePA==}
+    dependencies:
+      '@lit/reactive-element': 1.0.0
+      lit-html: 2.0.0
     dev: false
 
-  /lit-html/2.0.0-rc.4:
-    resolution: {integrity: sha512-WSLGu3vxq7y8q/oOd9I3zxyBELNLLiDk6gAYoKK4PGctI5fbh6lhnO/jVBdy0PV/vTc+cLJCA/occzx3YoNPeg==}
+  /lit-html/2.0.0:
+    resolution: {integrity: sha512-tJsCapCmc0vtLj6harqd6HfCxnlt/RSkgowtz4SC9dFE3nSL38Tb33I5HMDiyJsRjQZRTgpVsahrnDrR9wg27w==}
     dependencies:
-      '@types/trusted-types': 1.0.6
+      '@types/trusted-types': 2.0.2
+    dev: false
+
+  /lit/2.0.0:
+    resolution: {integrity: sha512-pqi5O/wVzQ9Bn4ERRoYQlt1EAUWyY5Wv888vzpoArbtChc+zfUv1XohRqSdtQZYCogl0eHKd+MQwymg2XJfECg==}
+    dependencies:
+      '@lit/reactive-element': 1.0.0
+      lit-element: 3.0.0
+      lit-html: 2.0.0
     dev: false
 
   /nanoid/3.1.25:

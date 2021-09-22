@@ -16,9 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Fable.Lit" Version="1.0.0-beta-004" />
-    <PackageReference Include="Fable.Haunted" Version="1.0.0-beta-007" />
-    <PackageReference Include="Sutil" Version="1.0.0-beta-003" />
+    <PackageReference Include="Fable.Lit" Version="1.0.0-rc-*" />
+    <PackageReference Include="Fable.Lit.Elmish" Version="1.0.0-rc-*" />
+    <PackageReference Include="Sutil" Version="1.0.0-beta-*" />
   </ItemGroup>
 
 </Project>

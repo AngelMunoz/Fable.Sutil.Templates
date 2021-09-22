@@ -2,19 +2,22 @@
 module Components.Counter
 
 open Lit
-open Haunted
 
-let private counter (props: {| initial: int option |}) =
-  let count, setCount =
-    Haunted.useState (defaultArg props.initial 0)
+[<LitElement("flit-counter")>]
+let private Counter () =
+  let props =
+    LitElement.init
+      (fun props ->
+        props.props <- {| initial = Prop.Of(0, attribute = "initial") |})
+
+  let count, setCount = Hook.useState (props.initial.Value)
 
   html
     $"""
         <p>Home: {count}</p>
         <button @click={fun _ -> setCount (count + 1)}>Increment</button>
         <button @click={fun _ -> setCount (count - 1)}>Decrement</button>
-        <button @click={fun _ -> setCount (defaultArg props.initial 0)}>Reset</button>
+        <button @click={fun _ -> setCount props.initial.Value}>Reset</button>
         """
 
-let register () =
-  defineComponent "flit-counter" (Haunted.Component counter)
+let register () = ()

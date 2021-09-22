@@ -5,8 +5,8 @@
   "scripts": {
     "postinstall": "dotnet tool restore",
     "format": "dotnet fantomas . --recurse",
-    "start": "dotnet fable src -e .fs.js -s -o ./public --watch --run vite",
-    "build": "dotnet fable src -e .fs.js -s -o ./public --run vite build"
+    "start": "dotnet fable src -s --watch --run vite",
+    "build": "dotnet fable src -s --run vite build"
   },
   "devDependencies": {
     "vite": "^2.5.4"

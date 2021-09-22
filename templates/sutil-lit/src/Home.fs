@@ -2,10 +2,11 @@
 module Pages.Home
 
 open Lit
-open Haunted
 
+[<LitElement("flit-home")>]
+let private Home () =
+  LitElement.init ()
 
-let private Home (props: {| initial: int option |}) =
   html
     $"""
         <section>
@@ -18,5 +19,4 @@ let private Home (props: {| initial: int option |}) =
         </section>
         """
 
-let register () =
-  defineComponent "flit-home" (Haunted.Component Home)
+let register () = ()

@@ -2,8 +2,9 @@
 module Pages.Notes
 
 open Browser.Types
+
+open Elmish
 open Lit
-open Haunted
 
 type private Note =
   { Id: int
@@ -20,7 +21,10 @@ type private Msg =
   | SetTitle of string
   | SetBody of string
 
-let private update state msg =
+let private init () =
+  { CurrentNote = None; Notes = [] }, Cmd.none
+
+let private update msg state =
   match msg with
   | Save ->
     match state.CurrentNote
@@ -33,26 +37,28 @@ let private update state msg =
           Notes =
             { note with
                 Id = state.Notes.Length + 1 }
-            :: state.Notes }
-    | None -> state
+            :: state.Notes },
+      Cmd.none
+    | None -> state, Cmd.none
 
   | Remove note ->
     { state with
-        Notes = state.Notes |> List.filter (fun n -> n <> note) }
+        Notes = state.Notes |> List.filter (fun n -> n <> note) },
+    Cmd.none
   | SetTitle title ->
     let current =
       state.CurrentNote
       |> Option.map (fun current -> { current with Title = title })
       |> Option.orElse (Some { Id = 0; Title = ""; Body = "" })
 
-    { state with CurrentNote = current }
+    { state with CurrentNote = current }, Cmd.none
   | SetBody body ->
     let current =
       state.CurrentNote
       |> Option.map (fun current -> { current with Body = body })
       |> Option.orElse (Some { Id = 0; Title = ""; Body = "" })
 
-    { state with CurrentNote = current }
+    { state with CurrentNote = current }, Cmd.none
 
 let private noteTemplate note =
   html
@@ -60,20 +66,18 @@ let private noteTemplate note =
         <li>Id: {note.Id} - {note.Title}</li>
     """
 
-let private view () =
+[<LitElement("flit-notes")>]
+let private Notes () =
+  LitElement.init ()
 
-  let (state, dispatch) =
-    Haunted.useReducer (update, { CurrentNote = None; Notes = [] })
+  let state, dispatch = Hook.useElmish (init, update)
 
   let notes = state.Notes |> List.map noteTemplate
 
-  let changeBody (evt: KeyboardEvent) =
-    SetBody (evt.target :?> HTMLInputElement).value
-    |> dispatch
+  let changeBody (evt: KeyboardEvent) = evt.target.Value |> SetBody |> dispatch
 
   let changeTitle (evt: KeyboardEvent) =
-    SetTitle (evt.target :?> HTMLInputElement).value
-    |> dispatch
+    evt.target.Value |> SetTitle |> dispatch
 
   html
     $"""
@@ -98,5 +102,4 @@ let private view () =
       <ul>{notes}</ul>
       """
 
-let register () =
-  defineComponent "flit-notes" (Haunted.Component view)
+let register () = ()
