@@ -1,12 +1,10 @@
-# Lit HTML + Fable!
+# Sutil + Fable.Lit!
 
-[Elmish]: https://elmish.github.io/elmish/
-[Lit]: https://lit.dev/docs/libraries/standalone-templates/
-[Elmish.Lit]: https://github.com/alfonsogarciacaro/Elmish.Lit
+Sutil and Fable.Lit join forces for the most Type Safe Interoperable web development approach.
 
-This is a simple template that brings the newly created [Elmish.Lit] package.
+Use HTML where you need to interoperate and no need to write bindings for third party web components.
 
-**[Elmish] + [Lit] |> 💖**
+Complex flows and complex UI? Use Sutil it's type safe Html DSL should get you covered against common Html Errors and typos at compile time!
 
 ### Run
 

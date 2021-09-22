@@ -1,6 +1,6 @@
 # Fable + Sutil!
 
-Sutil App Starter
+Sutil + Elmish approach starter
 
 ### Run
 
