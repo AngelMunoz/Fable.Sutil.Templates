@@ -5,7 +5,7 @@ open Lit
 
 [<LitElement("flit-counter")>]
 let private Counter () =
-  let props =
+  let (ele, props) =
     LitElement.init
       (fun props ->
         props.props <- {| initial = Prop.Of(0, attribute = "initial") |})
