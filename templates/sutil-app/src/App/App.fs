@@ -65,9 +65,8 @@ let view() =
     // Remote services
     let server = Server()
 
-    // model is an IStore<ModeL>
-    // This means we can write to it if we want, but when we're adopting
-    // Elmish, we treat it like an IObservable<Model>
+    // model is an IStore<Model>
+    // The Elmish processing loop will update the model whenever a message is dispatched
     let model, dispatch = () |> Store.makeElmish init (update server) ignore
 
     // Projections from model. These will be bound to elements below
@@ -98,10 +97,8 @@ let view() =
                     Attr.className "title is-4 sutil-logo"
                     Html.a [
                         Attr.className "navbar-item"
-                        Attr.href "https://github.com/davedawkins/Sutil"
+                        Attr.href "https://sutil.dev"
                         Html.img [ Attr.src "images/logo-wide.png" ]
-                        //Html.div [ Attr.className "sutil-logo-badge"; Html.span [ text "<>" ] ]
-                        //Html.span [ style [ Css.marginLeft (px 6) ]; text "SUTIL" ]
                     ]
                 ]
                 Html.a [

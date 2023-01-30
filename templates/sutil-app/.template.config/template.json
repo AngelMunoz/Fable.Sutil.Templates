@@ -2,9 +2,9 @@
   "$schema": "http://json.schemastore.org/template",
   "identity": "Sutil",
   "shortName": "sutil-app",
-  "name": "Fable Sutil Template",
+  "name": "Fable Sutil App",
   "author": "Angel D. Munoz, David Dawkins",
-  "classifications": ["Web", "F#", "fable", "Sutil", "DSL"],
+  "classifications": ["Fable", "Sutil" ],
   "type": {
     "language": "F#"
   },

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <!-- General info -->
     <Description>dotnet templates for Sutil</Description>
-    <Copyright>Copyright 2020 Angel D. Munoz, David Dawkins</Copyright>
+    <Copyright>Copyright 2023 Angel D. Munoz, David Dawkins</Copyright>
     <Authors>Angel Munoz, David Dawkins</Authors>
 
     <!-- Build config -->
@@ -16,7 +16,7 @@
     <!-- NuGet config -->
     <PackageType>Template</PackageType>
     <PackageId>Fable.Sutil.Templates</PackageId>
-    <PackageVersion>2.0.0</PackageVersion>
+    <PackageVersion>2.0</PackageVersion>
     <PackageTags>templates;fable;sutil;fsharp;</PackageTags>
     <PackageProjectUrl>https://github.com/AngelMunoz/Fable.Sutil.Templates</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
