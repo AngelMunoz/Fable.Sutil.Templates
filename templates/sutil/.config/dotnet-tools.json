@@ -2,16 +2,16 @@
   "version": 1,
   "isRoot": true,
   "tools": {
-    "fable": {
-      "version": "3.3.0",
+    "paket": {
+      "version": "5.257.0",
       "commands": [
-        "fable"
+        "paket"
       ]
     },
-    "fantomas-tool": {
-      "version": "4.5.3",
+    "fable": {
+      "version": "3.7.20",
       "commands": [
-        "fantomas"
+        "fable"
       ]
     }
   }
