@@ -16,7 +16,7 @@
     <!-- NuGet config -->
     <PackageType>Template</PackageType>
     <PackageId>Fable.Sutil.Templates</PackageId>
-    <PackageVersion>2.0.2</PackageVersion>
+    <PackageVersion>2.0.3</PackageVersion>
     <PackageTags>templates;fable;sutil;fsharp;</PackageTags>
     <PackageProjectUrl>https://github.com/AngelMunoz/Fable.Sutil.Templates</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -26,7 +26,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+    <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**;templates\**\node_modules;templates\**\package-lock.json" />
     <Compile Remove="**\*" />
   </ItemGroup>
 
