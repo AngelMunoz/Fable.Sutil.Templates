@@ -1,6 +1,6 @@
 ## Sutil Template for Full App
 
-A full that demonstrates some commonly required features in an SPA
+A full app that demonstrates some commonly required features in an SPA
 
 Features:
 - Sveltish transitions (in response to media query)

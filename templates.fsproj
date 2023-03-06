@@ -16,7 +16,7 @@
     <!-- NuGet config -->
     <PackageType>Template</PackageType>
     <PackageId>Fable.Sutil.Templates</PackageId>
-    <PackageVersion>2.0.3</PackageVersion>
+    <PackageVersion>2.0.4</PackageVersion>
     <PackageTags>templates;fable;sutil;fsharp;</PackageTags>
     <PackageProjectUrl>https://github.com/AngelMunoz/Fable.Sutil.Templates</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
