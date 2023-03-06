@@ -18,7 +18,7 @@ Features:
 
 ```
 dotnet new --install Fable.Sutil.Templates
-dotnet new sutil
+dotnet new sutil-app
 ```
 
 Alternatively, from repo:

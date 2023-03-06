@@ -4,7 +4,7 @@
   "shortName": "sutil-app",
   "name": "Fable Sutil App",
   "author": "Angel D. Munoz, David Dawkins",
-  "classifications": ["Fable", "Sutil" ],
+  "classifications": ["Fsharp", "Fable", "Sutil" ],
   "type": {
     "language": "F#"
   },
