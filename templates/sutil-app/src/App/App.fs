@@ -108,9 +108,9 @@ let view() =
                     Attr.ariaLabel "menu"
                     Attr.ariaExpanded false
                     Attr.custom("data-target","appNavMenu")
-                    Html.span[ Attr.ariaHidden true ]
-                    Html.span[ Attr.ariaHidden true ]
-                    Html.span[ Attr.ariaHidden true ]
+                    Html.span [ Attr.ariaHidden true ]
+                    Html.span [ Attr.ariaHidden true ]
+                    Html.span [ Attr.ariaHidden true ]
                     onClick (fun _ -> navMenuActive |> Store.modify not) [ PreventDefault ]
                 ]
             ]

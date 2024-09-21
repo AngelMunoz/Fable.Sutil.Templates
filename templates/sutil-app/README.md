@@ -1,4 +1,4 @@
-## Sutil Template for Full App
+## Sutil Template for SPA
 
 A full app that demonstrates some commonly required features in an SPA
 
@@ -17,15 +17,10 @@ Features:
 ### Quick Start
 
 ```
-dotnet new --install Fable.Sutil.Templates
-dotnet new sutil-app
-```
-
-Alternatively, from repo:
-
-```
-    git clone -s https://github.com/davedawkins/sutil-template-app.git
-    cd sutil-template-app
+    dotnet new install Fable.Sutil.Templates
+    mkdir myapp
+    cd myapp
+    dotnet new sutil-app
     dotnet tool restore
     npm install
     npm run start

@@ -1,8 +1,5 @@
-## Sutil Template for Hello World
+Hello World for Sutil + Vite
 
-### Quick Start
-
-```shell
-dotnet new --install Fable.Sutil.Templates
-dotnet new sutil-hello
-```
+## How to run
+- npm install
+- npm run start

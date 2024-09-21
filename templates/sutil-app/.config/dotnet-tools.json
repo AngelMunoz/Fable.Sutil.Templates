@@ -2,14 +2,8 @@
   "version": 1,
   "isRoot": true,
   "tools": {
-    "paket": {
-      "version": "5.257.0",
-      "commands": [
-        "paket"
-      ]
-    },
     "fable": {
-      "version": "3.7.20",
+      "version": "4.21.0",
       "commands": [
         "fable"
       ]

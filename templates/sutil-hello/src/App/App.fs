@@ -1,14 +1,7 @@
-module App
+﻿module App
 
 open Sutil
-open type Feliz.length  // For CSS units like px
 
-let app() =
-    Html.div [
-        Attr.style [
-            Css.margin (rem 1)
-        ]
-        text "Hello World"
-    ]
+let view() = Html.div [ text "Hello World" ]
 
-app() |> Program.mount
+view() |> Program.mount
